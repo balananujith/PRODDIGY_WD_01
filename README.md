@@ -39,7 +39,7 @@ To get a copy of this project up and running on your local machine, follow these
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your_username/responsive-landing-page.git
+   git clone https://github.com/your_username/PRODDIGY_WD_01.git
 
 ## Open the index.html file in your web browser to view the landing page.
 ## Usage
@@ -57,4 +57,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
        5.Open a pull request on the original repository.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the LICENSE file for details.
