@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Add CSS styling for the typing animation */
+        .typing-effect {
+            overflow: hidden;
+            border-right: 0.15em solid orange; /* Typing cursor style */
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em; /* Adjust spacing to match font style */
+            animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: orange;
+            }
+        }
+    </style>
+    <title>Landing Page with Nav Menu</title>
+</head>
+
+<body>
+    <header>
+        <h1 >MACHINE LEARNING</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li>Products</li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title"><span class="typing-effect">Machine Learning</span></p>
+            <p class="msg">Machine Learning is making the computer learn from studying data and statistics.
+        
+                Machine Learning is a step into the direction of artificial intelligence (AI).
+        
+                Machine Learning is a program that analyses data and learns to predict the outcome.</p>
+            <button class="cta">Learn More</button>
+        </section>
+        
+
+        <section class="right">
+            <img src="./images/ml.jpg" alt="Landing image">
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>
